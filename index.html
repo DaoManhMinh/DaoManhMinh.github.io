@@ -12,11 +12,9 @@
 
 <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
 
-<meta name="author" content="DaoMinh727"
-
-<!-- Open Graph / Facebook -->
+<!-- Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://minhh2792.is-a.dev/mcvn-optimization-guide/">
 <meta property="og:title" content="Tối ưu server Minecraft">
@@ -32,9 +30,11 @@
 
 </head>
 <body>
-<p>DaoMinh727</p>
-
-<img src="assets/img/su33.png" alt="Girl in a jacket" width="200" height="200">
+    <div id="navbar">
+      <a class="active" href="javascript:void(0)">DaoMinhWysi</a>
+    </div>
+<div class="content">
+<img src="assets/img/su33.png" alt="su33" width="200" height="200">
 
 <h2> Hello, I'm Minh </h2>
    
@@ -51,6 +51,20 @@
 • I play Minecraft and My ing is DaoMinh727.<br/>
 • I'am learning HTML - CSS and Java Script.<br/>
 • My email :<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">dmminh727@gmail.com</a>.</p>
-
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
 </body>
 </html>
